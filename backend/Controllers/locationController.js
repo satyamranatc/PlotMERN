@@ -2,7 +2,7 @@ import LocationModel from "../Models/LocationModel.js"
 
 export async function getLocation(req,res)
 {
-    let Data = await LocationModel.find();
+    let Data = await LocationModel.find().populate("totalProperties");
     res.json(Data);
 }
 export async function getLocationById(req,res)
