@@ -7,7 +7,7 @@ export async function getLocation(req,res)
 }
 export async function getLocationById(req,res)
 {
-    let Data = await LocationModel.findById(req.params.id);
+    let Data = await LocationModel.findById(req.params.id).populate("totalProperties");
     res.json(Data);
 }
 export async function postLocation(req,res)
