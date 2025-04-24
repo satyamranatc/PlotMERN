@@ -13,8 +13,9 @@ export async function getLocationById(req,res)
 export async function postLocation(req,res)
 {
     let NewLocation = new LocationModel(req.body);
+     console.log(req.body);
     await NewLocation.save()
-    res.json(NewLocation);
+    res.status(201).json(NewLocation);
 }
 export async function putLocation(req,res)
 {

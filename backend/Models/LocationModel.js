@@ -6,7 +6,7 @@ let LocationSchema = new mongoose.Schema({
         type:String, 
         unique:true
     },
-    streetName:{type:String},
+    streetName:{type:String, default : ""},
     totalProperties:[{
         type:mongoose.Schema.Types.ObjectId,
         ref:"PropertiesModel",
