@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './Components/NavBar'
 
 import LocationAdmin from './Pages/LocationAdmin.jsx'
-import PropertieAdmin from './Pages/PropertiesAdmin.jsx'
+import PropertiesAdmin from './Pages/PropertiesAdmin.jsx'
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<LocationAdmin />} />
-          <Route path="/propertieAdmin" element={<PropertieAdmin />} />
+          <Route path="/propertiesAdmin" element={<PropertiesAdmin />} />
         </Routes>
       </main>
     </BrowserRouter>
